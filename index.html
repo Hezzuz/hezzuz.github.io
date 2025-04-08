@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Favicon padrão -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hezzuz - Survival Minecraft</title>
+    <meta name="description" content="Junte-se ao Hezzuz, um servidor survival de Minecraft com economia, skills, pvp e comunidade ativa!">
+    <meta name="keywords" content="Minecraft, Hezzuz, servidor survival, servidor Minecraft, economia, pvp, skills, loja, comunidade">
+    <meta name="author" content="NiixLabs">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Hezzuz - Servidor Survival de Minecraft">
+    <meta property="og:description" content="Servidor de Minecraft survival com economia, skills e comunidade ativa. Entre agora no Hezzuz!">
+    <meta property="og:image" content="https://hezzuz.com/assets/icon.png">
+    <meta property="og:url" content="https://hezzuz.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hezzuz - Servidor Survival Minecraft">
+    <meta name="twitter:description" content="Servidor Minecraft Survival com eventos, economia e mais. Jogue agora no Hezzuz!">
+    <meta name="twitter:image" content="https://hezzuz.com/assets/icon.png">
+    <link rel="canonical" href="https://hezzuz.com">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HEZZUZ</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="https://hezzuzserver.minecart.com.br/">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1>Bem-vindo ao Hezzuz Survival</h1>
+        <p>Survival - 1.10.x até 1.20.x</p>
+        <div class="ip-box">
+            <span id="server-ip">hezzuz.com</span>
+            <button onclick="copyIP()" id="cip">Copiar IP</button>
+        </div>
+    </section>
+
+    <section class="features" id="sobre">
+        <div class="feature">
+            <h2>🛡️ PVP Balanceado</h2>
+            <p>Enfrente outros jogadores em arenas justas e desafiadoras.</p>
+        </div>
+        <div class="feature">
+            <h2>🏘️ Economia Ativa</h2>
+            <p>Venda, compre e enriqueça no nosso sistema econômico dinâmico.</p>
+        </div>
+        <div class="feature">
+            <h2>🌾 Skills de Sobrevivência</h2>
+            <p>Aprimore suas habilidades em mineração, pesca, combate e mais.</p>
+        </div>
+        <div class="feature">
+            <h2>🎉 Eventos Semanais</h2>
+            <p>Participe de eventos únicos com recompensas exclusivas.</p>
+        </div>
+        <!--<div class="feature">
+            <h2>👥 Comunidade Unida</h2>
+            <p>Faça amigos, crie clãs e domine o servidor com sua equipe.</p>
+        </div>-->
+    </section>
+
+    <section class="community">
+        <h2>🌐 Junte-se à Comunidade</h2>
+        <div class="socials">
+            <a href="https://discord.hezzuz.com" target="_blank">💬 Discord</a>
+            <a href="https://instagram.hezzuz.com" target="_blank">📷 Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hezzuz - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function copyIP() {
+            const ip = document.getElementById('server-ip').textContent;
+            navigator.clipboard.writeText(ip).then(() => {
+                document.getElementById('cip').textContent = 'Copiado!';
+                setTimeout(() => {
+                    document.getElementById('cip').textContent = 'Copiar IP';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cores personalizadas */
+:root {
+    --laranja: #FFA500;
+    --amarelo: #FFD700;
+    --preto: #121212;
+    --cinza: #1e1e1e;
+}
+
+/* Header */
+header {
+    background: var(--cinza);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--laranja);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--laranja);
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--amarelo);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/banner.png') center/cover no-repeat;
+    position: relative;
+    text-align: center;
+    padding: 6rem 2rem;
+    color: #fff;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.4);
+    z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.ip-box {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--amarelo);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ip-box {
+    background: var(--cinza);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    border: 2px solid var(--laranja);
+    gap: 1rem;
+}
+
+#server-ip {
+    font-weight: bold;
+    color: var(--laranja);
+}
+
+#cip {
+    background: var(--laranja);
+    border: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#cip:hover {
+    background: var(--amarelo);
+}
+
+/* Features */
+.features {
+    background: #1b1b1b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.feature {
+    background: var(--cinza);
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    color: var(--amarelo);
+    margin-bottom: 0.8rem;
+}
+
+/* Comunidade */
+.community {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--preto);
+}
+
+.community h2 {
+    font-size: 2rem;
+    color: var(--laranja);
+    margin-bottom: 1rem;
+}
+
+.socials {
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--amarelo);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: var(--laranja);
+}
+
+.community a {
+    color: var(--amarelo);
+}
+
+.community a:hover {
+    color: var(--laranja);
+}
+
+/* Footer */
+footer {
+    background: var(--cinza);
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #ccc;
+    border-top: 2px solid var(--laranja);
+}
